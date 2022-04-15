@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Transaction_report">
+
+    <include
+        layout="@layout/custom_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_color"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="Start Date"
+            android:textSize="@dimen/textsixteen" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:text="End Date"
+            android:textSize="@dimen/textsixteen" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_color"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp">
+
+        <TextView
+            android:id="@+id/startDate1"
+            android:layout_width="100dp"
+            android:layout_height="@dimen/searchboxheight"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_radius_round"
+            android:textColor="#000000"
+
+            />
+
+        <TextView
+            android:id="@+id/endDate1"
+            android:layout_width="100dp"
+            android:layout_height="@dimen/searchboxheight"
+            android:layout_marginLeft="15dp"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_radius_round"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btnSearch1"
+            android:layout_width="100dp"
+            android:layout_height="@dimen/searchboxheight"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_search_radius_round"
+            android:text="Search"
+            android:textColor="#FFFFFF"
+
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/fifteen"
+        android:paddingTop="@dimen/fifteen">
+
+        <ImageView
+            android:layout_width="@dimen/img_width"
+            android:layout_height="@dimen/img_height"
+            android:src="@drawable/revenue">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/total_revenue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="@dimen/fifteen"
+            android:text="Total Revenue"
+            android:textColor="#000000"
+            android:textSize="@dimen/textsixteen"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/fifteen"
+        android:paddingTop="8dp">
+
+        <ImageView
+            android:layout_width="@dimen/img_width"
+            android:layout_height="@dimen/img_height"
+            android:src="@drawable/transaction">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/fifteen"
+            android:text="TransactionCount"
+            android:textColor="#000000"
+            android:textSize="@dimen/textsixteen" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="10dp"></androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

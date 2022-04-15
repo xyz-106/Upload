@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="colorPrimary">#D12D2D</color>
+<color name="colorPrimaryDark">#FFFFFF</color>
+<color name="colorAccent">#03DAC5</color>
+<color name="toolbar_color">#FFFFFF</color>
+<color name="kyat_color">#07A613</color>
+    <color name="bg_color">#EFEDED</color>
+</resources>
